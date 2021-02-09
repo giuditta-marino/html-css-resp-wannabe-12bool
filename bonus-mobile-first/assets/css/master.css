@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .content{
+  font-size: 0.75em;
+}
+
+img{
+  height: 100px;
+}
+
+[class*="col-"]{
+  text-align: center;
+}
+
+#lezioni .container, #why .container{
+  background-color: #F2F2CD;
+}
+
+section#why img{
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.container{
+  padding-bottom: 8px;
+}
+
+#lezioni [class*="col-"], #steps [class*="col-"]{
+  padding-top: 12px;
+}
+
+#why [class*="col-"]{
+  padding-top: 20px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  img{
+    height: 200px;
+  }
+
+  body .content{
+    font-size: 1.1em;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .container{
+    margin-top: 0;
+    padding: 30px 0;
+  }
+
+  .container > [class*="col-"]{
+    padding: 15px;
+  }
+}
+
+@media all and (min-width: 992px) {
+
+  #steps .container, #why .container {
+    background-color: #f9f9f9;
+  }
+
+  #lezioni .container{
+    background-color: #ffffff;
+  }
+
+  img{
+    height: 200px;
+  }
+
+  .container{
+    max-width: none;
+  }
+
+  body .content{
+    font-size: 1.2em;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+}
