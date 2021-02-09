@@ -4,13 +4,13 @@ img{
   height: 200px;
 }
 
-.container.grey {
-  background-color: #f9f9f9;
-}
-
 .container{
   max-width: none;
   margin-top: 100px;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
 }
 
 h1{
@@ -47,4 +47,52 @@ h1{
 
 #why .container > [class*="col-"]{
   margin-top: 80px;
+}
+
+@media all and (max-width: 767px) {
+  /* GENERAL */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h3, h1{
+    margin: 0;
+  }
+
+  h1{
+    padding-top: 10px;
+  }
+
+  img{
+    height: 90px;
+  }
+
+  .container{
+    padding: 6px 13px;
+    line-height: 15px;
+    margin: 0;
+  }
+
+    section#lezioni .container, section#why .container{
+    background-color: #f2f2cd;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  h3{
+    font-size: 1em;
+  }
+
+  section .container .content{
+    font-size: 0.75em;
+    padding-top: 15px;
+  }
+
+  #why .container > [class*="col-"]{
+    margin-top: 0;
+  }
 }
