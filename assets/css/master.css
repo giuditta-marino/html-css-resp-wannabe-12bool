@@ -1,0 +1,50 @@
+/* COMMON */
+
+img{
+  height: 200px;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+.container{
+  max-width: none;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 2em;
+}
+
+/* SEZIONE LEZIONI */
+#lezioni {
+  text-align: center;
+}
+
+#lezioni .container img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* SEZIONE STEPS */
+#steps {
+  text-align: center;
+}
+
+/* SEZIONE PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .container img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+#why .container > [class*="col-"]{
+  margin-top: 80px;
+}
